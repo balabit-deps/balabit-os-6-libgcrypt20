@@ -11,3 +11,4 @@ CVE-2017-7526-2.patch
 CVE-2017-7526-3.patch
 CVE-2017-7526-4.patch
 CVE-2017-7526-5.patch
+disable_fips_enabled_read.patch

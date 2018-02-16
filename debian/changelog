@@ -1,3 +1,12 @@
+libgcrypt20 (1.6.5-2ubuntu0.4) xenial; urgency=medium
+
+  * Disable the library reading /proc/sys/crypto/fips_enabled file
+    and going into FIPS mode. This fixes a hang on boot when using a
+    FIPS-enabled kernel with encrypted installations (LP: #1748310)
+    - debian/patches/disable_fips_enabled_read.patch
+
+ -- Vineetha Pai <vineetha.hari.pai@canonical.com>  Fri, 16 Feb 2018 13:31:19 -0500
+
 libgcrypt20 (1.6.5-2ubuntu0.3) xenial-security; urgency=medium
 
   * SECURITY UPDATE: full RSA key recovery via side-channel attack
