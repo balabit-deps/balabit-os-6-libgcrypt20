@@ -1,3 +1,12 @@
+libgcrypt20 (1.6.5-2ubuntu0.5) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: memory-cache side-channel attack on ECDSA signatures
+    - debian/patches/CVE-2018-0495.patch: add blinding for ECDSA in
+      cipher/ecc-ecdsa.c.
+    - CVE-2018-0495
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 18 Jun 2018 09:30:10 -0400
+
 libgcrypt20 (1.6.5-2ubuntu0.4) xenial; urgency=medium
 
   * Disable the library reading /proc/sys/crypto/fips_enabled file
