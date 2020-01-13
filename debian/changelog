@@ -1,3 +1,12 @@
+libgcrypt20 (1.6.5-2ubuntu0.6) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: ECDSA timing attack
+    - debian/patches/CVE-2019-13627.patch: add mitigation against timing
+      attack in cipher/ecc-ecdsa.c, mpi/ec.c.
+    - CVE-2019-13627
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 13 Jan 2020 13:39:58 -0500
+
 libgcrypt20 (1.6.5-2ubuntu0.5) xenial-security; urgency=medium
 
   * SECURITY UPDATE: memory-cache side-channel attack on ECDSA signatures
